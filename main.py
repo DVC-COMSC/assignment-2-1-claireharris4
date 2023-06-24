@@ -1,16 +1,15 @@
 def main():
-    """
-    ##################################################
-    Comlete your code here
-    Use m_perc and f_perc for your results
-    ##################################################
-    """
+    males = int(input('Enter the number of males in class:'))
+    females = int(input('Enter the number of females in class:'))
 
-    """
-    ########################################
-    # Do not delete the return statement
-    ########################################
-    """
+    class_size = males + females
+    m_perc = (males/class_size) *100
+    f_perc = (females/class_size) *100
+
+    print (f'The total number of students: \t \t {class_size}')
+    print (f'The number of males and females: \t {males} \t \t {females}')
+    print (f'The percentage of males and females: \t {m_perc:.2f}% \t {f_perc:.2f}%')
+
     return m_perc, f_perc
 
 
